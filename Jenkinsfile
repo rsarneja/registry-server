@@ -4,6 +4,6 @@ node {
   }
   
   stage('Complie-Package') {
-    sh 'mvn package'
+    sh 'mvn package -DskipTests=true'
   }
 }
