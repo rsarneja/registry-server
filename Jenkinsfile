@@ -4,6 +4,6 @@ node {
   }
   
   stage('Complie-Package') {
-    sh 'mvn package -DskipTests=true'
+    sh 'mvn package -DskipTests=true docker:build'
   }
 }
